@@ -1,0 +1,65 @@
+:root{
+--white-color:white; 
+}
+
+
+.tarjeta2 {
+    width: 370px;
+    height: 404px;
+    left: calc(50% - 370px/2 - 400px);
+    top: calc(50% - 404px/2 - 464px);
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+}
+
+.tarjeta2:hover {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000f;
+    box-shadow: 0px 1px 1px 0px #0000001f;
+}
+
+
+.etiqueta {
+    margin-left: 24px;
+}
+
+
+.caja-ventana {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.caja-despliegue {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 0px;
+    background: rgba(33, 150, 243, 0.9);
+    text-align: justify;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.caja-ventana:hover .caja-despliegue {
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.caja-ventana {
+    overflow: hidden;
+}
+
+.texto-despliegue {
+    height: 168px;
+    width: 322px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    margin-left: 24px;
+    margin-top: 63px;
+    color: var(--white-color)
+}
